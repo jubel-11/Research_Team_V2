@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+reports/
+.vscode/
+.idea/
+.DS_Store
+*.kiro

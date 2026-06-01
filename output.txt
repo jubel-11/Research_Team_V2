@@ -1,0 +1,186 @@
+Your choice (1 or 2): 1
+
+=======================================================
+  🤖 RESEARCH TEAM v2
+  Topic    : The impact of artificial intelligence on the future of work
+  Thread ID: 06da1049
+  Nodes    : Planner → [3x Researcher] → Critic → Writer → Human → Publisher
+=======================================================
+
+  📍 PHASE 1: Running pipeline until approval gate...
+  [Planner → Researchers (parallel) → Critic → Writer]
+
+
+───────────────────────────────────────────────────────
+  📋 PLANNER NODE
+───────────────────────────────────────────────────────
+  Topic: The impact of artificial intelligence on the future of work
+    📡 [Planner]...
+  ✅ Plan created: To comprehensively analyze the multifaceted impacts of artif
+     [Technical & Scientific]: 2 questions
+     [Economic & Industry]: 2 questions
+     [Social & Ethical]: 2 questions
+
+───────────────────────────────────────────────────────
+  📡 DISPATCHER — Launching 3 parallel researchers
+───────────────────────────────────────────────────────
+  → [Technical & Scientific]
+  → [Economic & Industry]
+  → [Social & Ethical]
+    🔬 Researcher [Technical & Scientific] starting...
+    📡 [Researcher [Technical & Scientific]]...   
+    🔬 Researcher [Economic & Industry] starting...
+    🔬 Researcher [Social & Ethical] starting...  
+    📡 [Researcher [Economic & Industry]]...      
+    📡 [Researcher [Social & Ethical]]...
+    ✅ Researcher [Economic & Industry] complete (10333 chars)
+    ✅ Researcher [Technical & Scientific] complete (9419 chars)
+    ✅ Researcher [Social & Ethical] complete (13460 chars)
+
+───────────────────────────────────────────────────────
+  🔍 CRITIC NODE (Reflection)
+───────────────────────────────────────────────────────
+  Reviewing 3 research streams...
+    📡 [Critic]...
+  📊 Critique score: 7/10
+  Needs revision  : False
+  Summary: This technical and scientific perspective offers a strong foundation by moving b...      
+
+───────────────────────────────────────────────────────
+  ✍️  WRITER NODE
+───────────────────────────────────────────────────────
+  Writing from 3 research streams (critic score: 7/10)
+    📡 [Writer]...
+  ✅ Draft complete (4501 chars)
+
+  ⏸️  Graph paused at approval gate (34.8s elapsedd)
+
+=======================================================
+  📄 DRAFT REPORT FOR REVIEW (Critic score: 7/10) 
+=======================================================
+## The Impact of Artificial Intelligence on the Future of Work
+
+**Executive Summary**
+
+Artificial Intelligence (AI) is poised to profoundly reshape the global workforce, driving significant task augmentation and role transformation rather than widespread job displacement. While economic and ethical considerations require careful attention, the primary impact will be through the evolution of human-AI collaboration, necessitating a proactive approach to skill development and educational reform.
+
+**Technical & Scientific Analysis**
+
+The next decade will be defined by the integration of advanced AI technologies, particularly Generative AI and sophisticated robotics, into diverse work environments. Contrary to simplistic displacement narratives, these technologies are primarily facilitating **task augmentation**, enhancing human capabilities rather than replacing them entirely. Generative AI, exemplified by large language models and code generators, is transforming knowledge work. For insta...
+
+───────────────────────────────────────────────────────
+  🧑 HUMAN APPROVAL REQUIRED
+───────────────────────────────────────────────────────
+  approve → publish as-is
+  edit    → provide feedback and rewrite
+  reject  → do not publish
+
+  Your decision (approve/edit/reject): approve
+
+  📍 PHASE 3: Resuming from checkpoint '06da1049'...
+
+───────────────────────────────────────────────────────
+  🚦 HUMAN APPROVAL GATE
+  [Graph PAUSED — State SAVED to checkpoint: 06da1049]
+───────────────────────────────────────────────────────
+
+  Human decision: APPROVE
+
+───────────────────────────────────────────────────────
+  📢 PUBLISHER NODE — APPROVE
+───────────────────────────────────────────────────────
+  ✅ Report approved — publishing
+
+=======================================================
+  📊 FINAL RESULT
+=======================================================
+  Total time : 79.9s
+  Thread ID  : 06da1049
+  Decision   : APPROVE
+  Status     : ✅ PUBLISHED
+
+  Final Report Preview:
+  ──────────────────────────────────────────────────
+## The Impact of Artificial Intelligence on the Future of Work
+
+**Executive Summary**
+
+Artificial Intelligence (AI) is poised to profoundly reshape the global workforce, driving significant task augmentation and role transformation rather than widespread job displacement. While economic and ethical considerations require careful attention, the primary impact will be through the evolution of human-AI collaboration, necessitating a proactive approach to skill development and educational reform.
+
+**Technical & Scientific Analysis**
+
+The next decade will be defined by the integration of advanced A...
+
+  💾 Report saved to 'reports/the_impact_of_artificial_intel_20260601_151721.md'
+
+  🔗 View traces at: https://smith.langchain.com  
+  Project: research-team-v2
+
+───────────────────────────────────────────────────────
+  🕐 CHECKPOINT HISTORY
+───────────────────────────────────────────────────────
+  Total checkpoints: 8
+
+  Checkpoint 8 → next: ('__start__',)
+    Plan ready   : ❌
+    Findings     : 0 streams
+    Critic score : pending
+    Draft ready  : ❌
+    Decision     : pending
+    Published    : False
+
+  Checkpoint 7 → next: ('planner',)
+    Plan ready   : ❌
+    Findings     : 0 streams
+    Critic score : None
+    Draft ready  : ❌
+    Decision     : None
+    Published    : False
+
+  Checkpoint 6 → next: ('researcher', 'researcher', 'researcher')
+    Plan ready   : ✅
+    Findings     : 0 streams
+    Critic score : None
+    Draft ready  : ❌
+    Decision     : None
+    Published    : False
+
+  Checkpoint 5 → next: ('critic',)
+    Plan ready   : ✅
+    Findings     : 3 streams
+    Critic score : None
+    Draft ready  : ❌
+    Decision     : None
+    Published    : False
+
+  Checkpoint 4 → next: ('writer',)
+    Plan ready   : ✅
+    Findings     : 3 streams
+    Critic score : 7
+    Draft ready  : ❌
+    Decision     : None
+    Published    : False
+
+  Checkpoint 3 → next: ('human_approval',)        
+    Plan ready   : ✅
+    Findings     : 3 streams
+    Critic score : 7
+    Draft ready  : ✅
+    Decision     : None
+    Published    : False
+
+  Checkpoint 2 → next: ('publisher',)
+    Plan ready   : ✅
+    Findings     : 3 streams
+    Critic score : 7
+    Draft ready  : ✅
+    Decision     : approve
+    Published    : False
+
+  Checkpoint 1 → next: ()
+    Plan ready   : ✅
+    Findings     : 3 streams
+    Critic score : 7
+    Draft ready  : ✅
+    Decision     : approve
+    Published    : True
